@@ -1,6 +1,6 @@
-Money account
+# Money account
 
-Clone project and initilize by runing npm start on the console.
+Clone project and initilize it by runing npm start on the console.
 
 ```
  npm start
@@ -11,12 +11,16 @@ Clone project and initilize by runing npm start on the console.
 Example app listening on port 8080
 ```
 
-Requests
+## Requests
 
-HEADER Content-type: application/JSON
-Request: GET
-Descriptions: Get All Transactions
-url: http://localhost:8080/api
+### 1
+
+HEADER
+
+- Content-type: application/JSON
+- Request: GET
+- Description: Get All Transactions
+- url: http://localhost:8080/api
 
 Example Response
 
@@ -40,12 +44,14 @@ Example Response
 }
 ```
 
-Requests
+### 2
 
-HEADER Content-type: application/JSON
-Request: POST
-Descriptions: Get All Transactions
-url: http://localhost:8080/api
+HEADER
+
+- Content-type: application/JSON
+- Request: POST
+- Descriptions: Add new transaction
+- url: http://localhost:8080/api
 
 Example Body
 
@@ -62,11 +68,12 @@ Default response
 }
 ```
 
-Error Case
-Debit higher than balance
+#### Error Case
+
+`Debit higher than balance`
 
 ```
 {
-"message": "The balance cannot be negative. Transaction declined."
+    "message": "The balance cannot be negative. Transaction declined."
 }
 ```
